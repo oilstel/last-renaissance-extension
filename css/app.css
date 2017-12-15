@@ -1,0 +1,25 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  background-color: #000000;
+}
+
+.screen {
+  width: 100vw;
+  height: 100vh;
+  text-align: center;
+}
+
+.screen img {
+  height: 40vw;
+  max-height: 500px;
+  margin: auto;
+  position: relative;
+  vertical-align: middle;
+}
+
+.helper {
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}

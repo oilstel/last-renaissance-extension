@@ -1,0 +1,10 @@
+{
+    "name": "Last Renaissance",
+    "description": "...",
+    "version": "1.0.0.0",
+    "manifest_version": 2,
+    "permissions": ["http://lastrenaissance.tumblr.com/"],
+    "chrome_url_overrides" : {
+        "newtab": "index.html"
+    }
+ }
