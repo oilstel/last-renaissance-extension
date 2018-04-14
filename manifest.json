@@ -1,10 +1,31 @@
-{
-    "name": "Last Renaissance",
-    "description": "...",
-    "version": "1.0.0.0",
-    "manifest_version": 2,
-    "permissions": ["http://lastrenaissance.tumblr.com/"],
-    "chrome_url_overrides" : {
-        "newtab": "index.html"
-    }
- }
+ {
+   "manifest_version":2,
+   "name":"Last Renaissance",
+   "version":"1.0",
+   "chrome_url_overrides":{
+      "newtab":"index.html"
+   },
+   "icons":{
+      "16":"./icons/last-renaissance-16.png",
+      "48":"./icons/last-renaissance-48.png",
+      "128":"./icons/last-renaissance-128.png"
+   },
+   "permissions":[
+      "tabs",
+      "http://localhost:4000/",
+      "http://lastrenaissance.tumblr.com/",
+      "http://oils.rest/"
+   ],
+   "content_scripts":[
+      {
+         "matches":[
+            "http://localhost:4000/",
+            "http://lastrenaissance.tumblr.com/",
+            "http://oils.rest/"
+         ],
+         "js":[
+            "app.js"
+         ]
+      }
+   ]
+}
